@@ -56,7 +56,8 @@ test.describe("VFilterTab", () => {
       await expectSnapshot(
         page,
         `filter-tab-focused-${appliedFilterCount}`,
-        page.locator(wrapper)
+        page.locator(wrapper),
+        { snapshotOptions: { maxDiffPixelRatio: 0 } }
       )
     })
 
@@ -70,7 +71,8 @@ test.describe("VFilterTab", () => {
       await expectSnapshot(
         page,
         `filter-tab-focused-hovered-${appliedFilterCount}`,
-        page.locator(wrapper)
+        page.locator(wrapper),
+        { snapshotOptions: { maxDiffPixelRatio: 0 } }
       )
     })
 
@@ -84,7 +86,8 @@ test.describe("VFilterTab", () => {
         await expectSnapshot(
           page,
           `filter-tab-resting-${selected}-${appliedFilterCount}`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
 
@@ -97,7 +100,8 @@ test.describe("VFilterTab", () => {
         await expectSnapshot(
           page,
           `filter-tab-hovered-${selected}-${appliedFilterCount}`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
     }

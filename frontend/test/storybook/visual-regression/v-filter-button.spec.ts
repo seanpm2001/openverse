@@ -20,7 +20,8 @@ test.describe("VFilterButton", () => {
         await expectSnapshot(
           page,
           `filter-button-at-rest-${filterCount}-checked`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
 
@@ -32,7 +33,8 @@ test.describe("VFilterButton", () => {
         await expectSnapshot(
           page,
           `filter-button-hovered-${filterCount}-checked`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
 
@@ -42,7 +44,8 @@ test.describe("VFilterButton", () => {
         await expectSnapshot(
           page,
           `filter-button-focused-${filterCount}-checked`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
 
@@ -57,7 +60,8 @@ test.describe("VFilterButton", () => {
         await expectSnapshot(
           page,
           `filter-button-focused-${filterCount}-checked`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
 
@@ -70,7 +74,8 @@ test.describe("VFilterButton", () => {
         await expectSnapshot(
           page,
           `filter-button-pressed-${filterCount}-checked`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
 
@@ -83,7 +88,8 @@ test.describe("VFilterButton", () => {
         await expectSnapshot(
           page,
           `filter-button-pressed-hovered-${filterCount}-checked`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
 
@@ -96,7 +102,8 @@ test.describe("VFilterButton", () => {
         await expectSnapshot(
           page,
           `filter-button-pressed-focused-${filterCount}-checked`,
-          page.locator(wrapper)
+          page.locator(wrapper),
+          { snapshotOptions: { maxDiffPixelRatio: 0 } }
         )
       })
     }
